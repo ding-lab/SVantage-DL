@@ -14,7 +14,7 @@ def normalize_svtype(sv: str) -> str:
 
 def load_records(base_dir: str, sample_ids: list, subdir: str = "sv") -> list:
     """
-    Load all .pkl records produced by the Cue tokenization pipeline.
+    Load all .pkl records produced by the tokenization pipeline.
 
     Expected directory layout
     -------------------------
