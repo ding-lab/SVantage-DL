@@ -16,7 +16,7 @@ A U-Net that predicts a 2D breakpoint probability heatmap over the signal matrix
 
 ### Signal extraction and tokenization
 
-Multi-channel alignment signals are extracted from BAM files at candidate SV loci and transformed into structured token representations and pairwise contact matrices. Signal extraction draws on alignment indexing concepts from the [Cue framework](https://github.com/PopicLab/cue) (PopicLab, Broad Institute). The extracted signals are subsequently processed by SVantage-DL's preprocessing pipeline into token sequences and attention bias matrices consumed by the transformer — a representation that is agnostic to whether the underlying reads are long- or short-read data.
+Multi-channel alignment signals are extracted from BAM files at candidate SV loci and transformed into structured token representations and pairwise contact matrices. Signal extraction draws on alignment indexing concepts from the [Cue framework](https://github.com/PopicLab/cue) (PopicLab, Broad Institute). The extracted signals are subsequently processed by SVantage-DL's preprocessing pipeline into token sequences and attention bias matrices consumed by the transformer, a representation that is agnostic to whether the underlying reads are long- or short-read data.
 
 To run tokenization:
 
