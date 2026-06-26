@@ -21,7 +21,7 @@ Multi-channel alignment signals are extracted from BAM files at candidate SV loc
 To run tokenization:
 
 ```bash
-# Edit SAMPLES dict in scripts/tokenize.py with your BAM/VCF/FAI paths
+# Edit SAMPLES dict in scripts/tokenize.py with BAM/VCF/FAI paths
 python scripts/tokenize.py
 ```
 
