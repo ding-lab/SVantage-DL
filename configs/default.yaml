@@ -1,0 +1,26 @@
+seed: 7
+device: cuda  # falls back to cpu automatically
+
+data:
+  subdir: sv
+  signals:
+    - SR_RP
+    - RD_CLIPPED
+    - RD_LOW
+  n_bins: 500
+
+model:
+  d_model: 128
+  n_heads: 4
+  n_layers: 4
+  dropout: 0.1
+
+training:
+  lr: 3.0e-4
+  epochs: 30
+  batch_size: 16
+  weight_decay: 0.01
+  grad_clip: 1.0
+  train_frac: 0.8
+  val_frac: 0.1
+  test_frac: 0.1
